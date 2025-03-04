@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo3.png" alt="Logo" class="logo" width="100">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>What Our Customers Say</h2>
+            <div class="review">
+                <p><strong>John :</strong> "This product changed my life! Highly recommended."</p>
+            </div>
+            <div class="review">
+                <p><strong>Alice:</strong> "Excellent quality. Award 5 stars!"</p>
+            </div>
+            
+            
+            <form id="reviewForm">
+                <label for="review">Leave a Review:</label>
+                <textarea id="review" name="review" rows="10" cols="50" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="images/Facebook.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="images/Instagram.jpeg" alt="Instagram" width="30"></a>
+            <p>&copy; 2025 Jackson.</p>
+        </div> 
+    </footer>
+    <script>
+        document.getElementById("reviewForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            alert("Thank you for your review!"); 
+        });
+    </script>
+</body>
+</html>
